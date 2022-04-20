@@ -1,0 +1,27 @@
+pipeline {
+    agent any 
+    stages{
+        stage('checkout from git'){
+            steps{
+                
+               
+checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[credentialsId: 'TOKEN1-GIT', url: 'https://github.com/rritsoft/springboot-app.git']]])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            }
+        }
+    }
+}
